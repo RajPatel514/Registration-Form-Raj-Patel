@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <style>
+        body {
+
+            background: rgb(251, 247, 247);
+
+        }
+    </style>
+
+    <div class="content">
+        <h1>Fifth Chance Loan Application</h1>
+        <form action="index.html" method="POST">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="John">
+            <br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" name="lastName" id="lastName" required placeholder="Doe">
+            <br><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="number" id="phone" name="phone" placeholder="555-555-5555" required /input>
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob" min="1910-01-01" max="2024-01-01" required>
+            <br><br>
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <label><input type="radio" name="gender" value="male">Male</label>
+                <label><input type="radio" name="gender" value="female">Female</label>
+                <label><input type="radio" name="gender" value="Other">Other</label>
+                <label><input type="radio" name="gender" value="Null">Prefer not to answer</label>
+
+            </fieldset>
+            <br>
+
+            <label for="status">Marital Status:</label>
+            <select name="status" id="status">
+                <option value="hidden" hidden>Please Select</option>
+                <option value="single">Single</option>
+                <option value="married">Married</option>
+                <option value="commonlaw">Common Law</option>
+                <option value="divorced">Divorced</option>
+            </select>
+            <br><br>
+
+
+            <label for="credit">Credit Score:</label>
+            <select name="credit" id="credit">
+                <option value="hidden" hidden>Please Select</option>
+                <option value="0-400">0-400</option>
+                <option value="400-500">400-500</option>
+                <option value="500-600">500-600</option>
+                <option value="600-700">600-700</option>
+                <option value="700-850">700-850</option>
+            </select>
+            <br><br>
+
+            <label for="salary">Salary:</label>
+            <select name="salary" id="salary" value="salary">
+                <option value="hidden" hidden>Please Select</option>
+                <option value=">35000">Less than $35000</option>
+                <option value="35000-50000">$35000-50000</option>
+                <option value="50000-75000">$50000-75000</option>
+                <option value="75000-100000">$75000-100000</option>
+                <option value="100000+">$100000+</option>
+            </select>
+            <br><br>
+
+
+            <h2>Create Bank Login to Access Application</h2>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+            <br><br>
+
+            <label><input type="checkbox" name="background" value="background" required /input> I consent to a credit
+                check for this application.</label>
+            <br><br><br>
+
+            <button type="submit">Submit Application</button>
+            <br>
+        </form>
+    </div>
+</body>
+
+</html>
